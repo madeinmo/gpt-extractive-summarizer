@@ -1,3 +1,4 @@
+import openai
 from functools import partial
 from typing import List, Optional, Union
 
@@ -82,8 +83,7 @@ class Summarizer(BertSummarizer):
             model, custom_model, custom_tokenizer, hidden, reduce_option, sentence_handler, random_state, hidden_concat,
             gpu_id
         )
-
-
+        
 class TransformerSummarizer(BertSummarizer):
     """
     Newer style that has keywords for models and tokenizers, but allows the user to change the type.

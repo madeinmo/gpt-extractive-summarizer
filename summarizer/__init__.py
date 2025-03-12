@@ -1,3 +1,8 @@
-from summarizer.bert import Summarizer, TransformerSummarizer
+# from summarizer.bert import Summarizer, TransformerSummarizer
 
-__all__ = ["Summarizer", "TransformerSummarizer"]
+# __all__ = ["Summarizer", "TransformerSummarizer"]
+
+from summarizer.openai import OpenAISummarizer
+
+__all__ = ["OpenAISummarizer"]
+
